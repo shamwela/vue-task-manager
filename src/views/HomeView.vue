@@ -28,7 +28,7 @@ export default {
         aria-label="New Task"
         required
       />
-      <button type="submit">Add new task</button>
+      <button type="submit">Add</button>
     </form>
     <div class="flex flex-col gap-y-4">
       <div v-for="{ id, name } in tasks" :key="id">
