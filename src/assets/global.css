@@ -2,34 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    @apply p-8;
-  }
+html {
+  @apply p-8;
+}
 
-  #app,
-  main {
-    @apply flex flex-col gap-y-4;
-  }
+#app,
+main {
+  @apply flex flex-col gap-y-4;
+}
 
-  h1 {
-    @apply text-3xl;
-  }
+h1 {
+  @apply text-3xl;
+}
 
-  input {
-    @apply ring-1 ring-black;
-  }
+input {
+  @apply ring-1 ring-black;
+}
 
-  input,
-  button {
-    @apply py-1 px-4 rounded-lg;
-  }
+input,
+button {
+  @apply py-1 px-4 rounded-lg;
+}
 
-  button[type='submit'] {
-    @apply bg-blue-500 hover:bg-blue-400;
-  }
+button[type='submit'] {
+  @apply bg-blue-500 hover:bg-blue-400;
+}
 
-  a {
-    @apply hover:underline;
-  }
+a {
+  @apply hover:underline;
+}
+
+nav > .router-link-active {
+  @apply font-bold;
 }
