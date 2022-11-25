@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply p-8;
+  }
+
+  #app,
+  main {
+    @apply flex flex-col gap-y-4;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  input {
+    @apply ring-1 ring-black;
+  }
+
+  input,
+  button {
+    @apply py-1 px-4 rounded-lg;
+  }
+
+  button[type='submit'] {
+    @apply bg-blue-500 hover:bg-blue-400;
+  }
+
+  a {
+    @apply hover:underline;
+  }
+}
