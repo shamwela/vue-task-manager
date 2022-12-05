@@ -5,7 +5,7 @@ const initialTasks: Task[] = [
   {
     id: 1,
     name: 'Learn Vue',
-    completed: false,
+    completed: true,
   },
   {
     id: 2,
