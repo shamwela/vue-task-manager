@@ -1,8 +1,12 @@
 <script lang="ts">
 import { store } from '@/store/index'
 import { mapState } from 'vuex'
+import TaskItem from '@/components/TaskItem.vue'
 
 export default {
+  components: {
+    TaskItem,
+  },
   data() {
     return {
       newTaskName: '',
@@ -31,8 +35,8 @@ export default {
       <button type="submit">Add</button>
     </form>
     <div class="flex flex-col gap-y-4">
-      <div v-for="{ id, name } in tasks" :key="id">
-        <span>{{ name }}</span>
+      <div v-for="task in tasks" :key="task.id">
+        <TaskItem :task="task" />
       </div>
     </div>
   </main>
